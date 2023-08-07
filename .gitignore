@@ -133,4 +133,5 @@ dmypy.json
 .DS_Store
 
 # Project Specific
-.idea
+migrations/
+KEY.txt
