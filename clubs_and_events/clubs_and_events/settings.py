@@ -136,5 +136,6 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Auth User Model
+# Custom user model for authentication, delete to revert back to default.
 
 AUTH_USER_MODEL = 'user.User'
