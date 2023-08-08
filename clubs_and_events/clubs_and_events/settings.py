@@ -47,15 +47,6 @@ INSTALLED_APPS = [
     'corsheaders',
 ]
 
-# REST Framework Default Authentication
-# Disable comments to authenticate via tokens instead of via Django sessions
-# For development period, enable comments to test API endpoints more convenient
-
-# REST_FRAMEWORK = {
-#     'DEFAULT_AUTHENTICATION_CLASSES': [
-#         'rest_framework.authentication.TokenAuthentication'
-#     ]
-# }
 
 CORS_ORIGIN_ALLOW_ALL=True
 
@@ -149,3 +140,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Custom user model for authentication, delete to revert back to default.
 
 AUTH_USER_MODEL = 'user.User'
+
+REST_FRAMEWORK = {
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json',
+    # 'DEFAULT_AUTHENTICATION_CLASSES': [
+    #     'rest_framework.authentication.TokenAuthentication'
+    # ]
+}
